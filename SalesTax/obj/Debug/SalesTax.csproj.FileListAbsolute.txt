@@ -1,0 +1,6 @@
+F:\Design & Algorithms\SalesTax\SalesTax\bin\Debug\SalesTax.exe.config
+F:\Design & Algorithms\SalesTax\SalesTax\bin\Debug\SalesTax.exe
+F:\Design & Algorithms\SalesTax\SalesTax\bin\Debug\SalesTax.pdb
+F:\Design & Algorithms\SalesTax\SalesTax\obj\Debug\SalesTax.exe
+F:\Design & Algorithms\SalesTax\SalesTax\obj\Debug\SalesTax.pdb
+F:\Design & Algorithms\SalesTax\SalesTax\obj\Debug\SalesTax.csprojResolveAssemblyReference.cache

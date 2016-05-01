@@ -1,0 +1,787 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
+  dslVersion="1.0.0.0"
+  Id="d735630b-d3d6-425e-90d1-fda8e281dc71"
+  name="SalesTaxModelling" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <interaction
+        Id="c418a30a-1687-433e-962a-34af792060dc"
+        name="SalesTaxSequence"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="3c3ae9f0-a520-475f-8269-3ef74ccd36dd"
+            name="BehaviorExecutionSpecification2">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="5ab2f6b8-351c-4cf8-9634-889ac449c03b"
+                LastKnownName="Get Sales Order"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="2f85da1f-019c-4359-b01f-952ff2e0078a"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="569fc5a3-833a-4ead-bc9b-2114f1690384"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="69c84b38-9dba-4d2f-be83-7bbf914fc16a"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="SalesTaxModelling.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="5e0313fd-2225-47c9-b3a3-996987af218c"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="SalesTaxModelling.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="04c11233-e58f-4f88-8932-b8e1d892ba04"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="SalesTaxModelling.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="e817acb5-fbb4-4cd1-b6de-6b54b3bd1a2e"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="569fc5a3-833a-4ead-bc9b-2114f1690384"
+            name="ExecutionOccurrenceSpecification3">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="57cbed5c-5f80-4f54-8832-56a2ef688d41"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SalesTaxModelling.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="5ab2f6b8-351c-4cf8-9634-889ac449c03b"
+                LastKnownName="Get Sales Order"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="35c40946-6873-45f7-afc5-d72cb63d3a2c"
+            name="MessageOccurrenceSpecification4">
+            <covered>
+              <lifelineMoniker
+                Id="7f1c89d2-8ab0-4bc8-9b6c-48ff5893800e"
+                LastKnownName="Sales Tax"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="69c84b38-9dba-4d2f-be83-7bbf914fc16a"
+            name="MessageOccurrenceSpecification5">
+            <covered>
+              <lifelineMoniker
+                Id="5ab2f6b8-351c-4cf8-9634-889ac449c03b"
+                LastKnownName="Get Sales Order"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="0e6865ac-c98c-46b8-8a0c-06a6b5fc334f"
+            name="BehaviorExecutionSpecification3">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="bca7c108-d5e5-41e9-b4ec-19fd0ff51941"
+                LastKnownName="CheckOut"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="2dccf41d-03ec-4497-b085-e61412958e1d"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="2c4dc6ac-136d-49a2-a04f-578dda837954"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="f6824544-5bd3-4f0d-8bd2-fbd3a7317eb7"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="SalesTaxModelling.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="876bbad8-e021-4939-854d-8655be1b7e35"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="SalesTaxModelling.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="6b4baa65-1ed4-408f-a6e1-0d14821711bc"
+                LastKnownName="MessageOccurrenceSpecification15"
+                LastKnownLocation="SalesTaxModelling.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="44fe8a0c-9376-4cf2-ad56-1ded6abbbc69"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="2c4dc6ac-136d-49a2-a04f-578dda837954"
+            name="ExecutionOccurrenceSpecification5">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="9520527c-2ef8-492b-b3da-19d8b0fbf1cb"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SalesTaxModelling.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="bca7c108-d5e5-41e9-b4ec-19fd0ff51941"
+                LastKnownName="CheckOut"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="5e0313fd-2225-47c9-b3a3-996987af218c"
+            name="MessageOccurrenceSpecification8">
+            <covered>
+              <lifelineMoniker
+                Id="5ab2f6b8-351c-4cf8-9634-889ac449c03b"
+                LastKnownName="Get Sales Order"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="f6824544-5bd3-4f0d-8bd2-fbd3a7317eb7"
+            name="MessageOccurrenceSpecification9">
+            <covered>
+              <lifelineMoniker
+                Id="bca7c108-d5e5-41e9-b4ec-19fd0ff51941"
+                LastKnownName="CheckOut"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="5c21b984-2b50-43bd-91c9-c3af8b656d72"
+            name="BehaviorExecutionSpecification4">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="7aece4d4-809e-4572-9702-2f64f8a8ce8a"
+                LastKnownName="Product"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="08321eb6-ef67-48ba-aea3-407e7e84fdd4"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="05345f4e-57ea-4fab-b781-42575b2a96df"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="e112d02e-081c-48f4-aa26-23814bd68ee3"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="SalesTaxModelling.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="1c63466a-d0f5-4210-8397-3a609bba6ef8"
+                LastKnownName="MessageOccurrenceSpecification16"
+                LastKnownLocation="SalesTaxModelling.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="0a8caaba-807e-45f2-947e-034367887010"
+                LastKnownName="MessageOccurrenceSpecification19"
+                LastKnownLocation="SalesTaxModelling.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="c24e2187-62c2-4505-89f7-c443e34906d4"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="05345f4e-57ea-4fab-b781-42575b2a96df"
+            name="ExecutionOccurrenceSpecification7">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="f05fb1a6-9daa-4ad5-92d8-47a0b1cf2437"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SalesTaxModelling.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="7aece4d4-809e-4572-9702-2f64f8a8ce8a"
+                LastKnownName="Product"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="e112d02e-081c-48f4-aa26-23814bd68ee3"
+            name="MessageOccurrenceSpecification13">
+            <covered>
+              <lifelineMoniker
+                Id="7aece4d4-809e-4572-9702-2f64f8a8ce8a"
+                LastKnownName="Product"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="876bbad8-e021-4939-854d-8655be1b7e35"
+            name="MessageOccurrenceSpecification12">
+            <covered>
+              <lifelineMoniker
+                Id="bca7c108-d5e5-41e9-b4ec-19fd0ff51941"
+                LastKnownName="CheckOut"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="6d347121-9c91-403f-9603-fd743017ab2d"
+            name="BehaviorExecutionSpecification5">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="5a153a0a-ddc0-4a01-91b3-4bffbaa2636f"
+                LastKnownName="Tax"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="dbd7aa2d-09ca-45af-bff3-0528fe2bbfe7"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="26df94ce-66da-462d-b092-dbc35e6c20a0"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="6fa56e7a-29a1-4b84-94dc-02f73b463614"
+                LastKnownName="MessageOccurrenceSpecification17"
+                LastKnownLocation="SalesTaxModelling.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="da4ce13b-6b62-431f-a52e-11b3369fd297"
+                LastKnownName="MessageOccurrenceSpecification18"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="26df94ce-66da-462d-b092-dbc35e6c20a0"
+            name="ExecutionOccurrenceSpecification9">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="65a72779-b5f3-4218-aff9-7d966db40331"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SalesTaxModelling.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="5a153a0a-ddc0-4a01-91b3-4bffbaa2636f"
+                LastKnownName="Tax"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="6fa56e7a-29a1-4b84-94dc-02f73b463614"
+            name="MessageOccurrenceSpecification17">
+            <covered>
+              <lifelineMoniker
+                Id="5a153a0a-ddc0-4a01-91b3-4bffbaa2636f"
+                LastKnownName="Tax"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="1c63466a-d0f5-4210-8397-3a609bba6ef8"
+            name="MessageOccurrenceSpecification16">
+            <covered>
+              <lifelineMoniker
+                Id="7aece4d4-809e-4572-9702-2f64f8a8ce8a"
+                LastKnownName="Product"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="0a8caaba-807e-45f2-947e-034367887010"
+            name="MessageOccurrenceSpecification19">
+            <covered>
+              <lifelineMoniker
+                Id="7aece4d4-809e-4572-9702-2f64f8a8ce8a"
+                LastKnownName="Product"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="da4ce13b-6b62-431f-a52e-11b3369fd297"
+            name="MessageOccurrenceSpecification18">
+            <covered>
+              <lifelineMoniker
+                Id="5a153a0a-ddc0-4a01-91b3-4bffbaa2636f"
+                LastKnownName="Tax"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="dbd7aa2d-09ca-45af-bff3-0528fe2bbfe7"
+            name="ExecutionOccurrenceSpecification10">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="c1508cf8-0adc-444d-af57-8176e8781d16"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SalesTaxModelling.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="5a153a0a-ddc0-4a01-91b3-4bffbaa2636f"
+                LastKnownName="Tax"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="6b4baa65-1ed4-408f-a6e1-0d14821711bc"
+            name="MessageOccurrenceSpecification15">
+            <covered>
+              <lifelineMoniker
+                Id="bca7c108-d5e5-41e9-b4ec-19fd0ff51941"
+                LastKnownName="CheckOut"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="c24e2187-62c2-4505-89f7-c443e34906d4"
+            name="MessageOccurrenceSpecification14">
+            <covered>
+              <lifelineMoniker
+                Id="7aece4d4-809e-4572-9702-2f64f8a8ce8a"
+                LastKnownName="Product"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="08321eb6-ef67-48ba-aea3-407e7e84fdd4"
+            name="ExecutionOccurrenceSpecification8">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="5fb4f10e-fec1-4ea5-bb8d-d424760b28f4"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SalesTaxModelling.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="7aece4d4-809e-4572-9702-2f64f8a8ce8a"
+                LastKnownName="Product"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="04c11233-e58f-4f88-8932-b8e1d892ba04"
+            name="MessageOccurrenceSpecification11">
+            <covered>
+              <lifelineMoniker
+                Id="5ab2f6b8-351c-4cf8-9634-889ac449c03b"
+                LastKnownName="Get Sales Order"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="44fe8a0c-9376-4cf2-ad56-1ded6abbbc69"
+            name="MessageOccurrenceSpecification10">
+            <covered>
+              <lifelineMoniker
+                Id="bca7c108-d5e5-41e9-b4ec-19fd0ff51941"
+                LastKnownName="CheckOut"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="2dccf41d-03ec-4497-b085-e61412958e1d"
+            name="ExecutionOccurrenceSpecification6">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="af876171-a39a-4267-8c6f-d5fc5bed209c"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SalesTaxModelling.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="bca7c108-d5e5-41e9-b4ec-19fd0ff51941"
+                LastKnownName="CheckOut"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="e817acb5-fbb4-4cd1-b6de-6b54b3bd1a2e"
+            name="MessageOccurrenceSpecification6">
+            <covered>
+              <lifelineMoniker
+                Id="5ab2f6b8-351c-4cf8-9634-889ac449c03b"
+                LastKnownName="Get Sales Order"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="9f30c0dd-5e47-480a-9f2b-968d4f12c9ba"
+            name="MessageOccurrenceSpecification7">
+            <covered>
+              <lifelineMoniker
+                Id="7f1c89d2-8ab0-4bc8-9b6c-48ff5893800e"
+                LastKnownName="Sales Tax"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="2f85da1f-019c-4359-b01f-952ff2e0078a"
+            name="ExecutionOccurrenceSpecification4">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="f49247a2-95a3-4bdc-844b-dd17c3a76f9b"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SalesTaxModelling.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="5ab2f6b8-351c-4cf8-9634-889ac449c03b"
+                LastKnownName="Get Sales Order"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="7f1c89d2-8ab0-4bc8-9b6c-48ff5893800e"
+            name="Sales Tax"
+            isActor="false"
+            lifelineDisplayName="Sales Tax">
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="35c40946-6873-45f7-afc5-d72cb63d3a2c"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="SalesTaxModelling.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="9f30c0dd-5e47-480a-9f2b-968d4f12c9ba"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="5ab2f6b8-351c-4cf8-9634-889ac449c03b"
+            name="Get Sales Order"
+            isActor="false"
+            lifelineDisplayName="Get Sales Order">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="569fc5a3-833a-4ead-bc9b-2114f1690384"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="SalesTaxModelling.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="2f85da1f-019c-4359-b01f-952ff2e0078a"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="bca7c108-d5e5-41e9-b4ec-19fd0ff51941"
+            name="CheckOut"
+            isActor="false"
+            lifelineDisplayName="CheckOut">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="2c4dc6ac-136d-49a2-a04f-578dda837954"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="SalesTaxModelling.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="2dccf41d-03ec-4497-b085-e61412958e1d"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="7aece4d4-809e-4572-9702-2f64f8a8ce8a"
+            name="Product"
+            isActor="false"
+            lifelineDisplayName="Product">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="05345f4e-57ea-4fab-b781-42575b2a96df"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="SalesTaxModelling.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="08321eb6-ef67-48ba-aea3-407e7e84fdd4"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="5a153a0a-ddc0-4a01-91b3-4bffbaa2636f"
+            name="Tax"
+            isActor="false"
+            lifelineDisplayName="Tax">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="26df94ce-66da-462d-b092-dbc35e6c20a0"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="SalesTaxModelling.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="dbd7aa2d-09ca-45af-bff3-0528fe2bbfe7"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="289550b4-3cc7-4a8b-9a9d-b150c0d49ed1"
+            name="GetSalesOrder"
+            messageKind="Complete"
+            messageSort="CreateMessage"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="35c40946-6873-45f7-afc5-d72cb63d3a2c"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="69c84b38-9dba-4d2f-be83-7bbf914fc16a"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="dc5f7c39-0534-4ac0-bf53-95456221bcd9"
+            name="PlaceInCartAndProcess()"
+            messageKind="Complete"
+            messageSort="CreateMessage"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="5e0313fd-2225-47c9-b3a3-996987af218c"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="f6824544-5bd3-4f0d-8bd2-fbd3a7317eb7"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="882c28bf-15ab-4554-8ebd-6d1d8ed0a64a"
+            name="CalculateTaxedPrice()"
+            messageKind="Complete"
+            messageSort="CreateMessage"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="876bbad8-e021-4939-854d-8655be1b7e35"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="e112d02e-081c-48f4-aa26-23814bd68ee3"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="1c311628-4078-4d08-90f2-a2dcbcbf28b2"
+            name="CalculateTax()"
+            messageKind="Complete"
+            messageSort="CreateMessage"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="1c63466a-d0f5-4210-8397-3a609bba6ef8"
+                LastKnownName="MessageOccurrenceSpecification16"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="6fa56e7a-29a1-4b84-94dc-02f73b463614"
+                LastKnownName="MessageOccurrenceSpecification17"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="f5f8d8ab-06e4-4a1e-b961-4f7590d01aa6"
+            name="ReturnTax()"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="da4ce13b-6b62-431f-a52e-11b3369fd297"
+                LastKnownName="MessageOccurrenceSpecification18"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="0a8caaba-807e-45f2-947e-034367887010"
+                LastKnownName="MessageOccurrenceSpecification19"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="7aaaaac4-dd6b-4a1f-8f82-338ce959d6e7"
+            name="GetTaxAndPrice()"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="c24e2187-62c2-4505-89f7-c443e34906d4"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="6b4baa65-1ed4-408f-a6e1-0d14821711bc"
+                LastKnownName="MessageOccurrenceSpecification15"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="81d55a07-7ae2-4a9b-b589-631c8bd887a7"
+            name="GetReceipt()"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="44fe8a0c-9376-4cf2-ad56-1ded6abbbc69"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="04c11233-e58f-4f88-8932-b8e1d892ba04"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="5eeb68d3-50b2-4790-a54b-d31fae5e58fa"
+            name="GetReceipt"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="e817acb5-fbb4-4cd1-b6de-6b54b3bd1a2e"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="9f30c0dd-5e47-480a-9f2b-968d4f12c9ba"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="SalesTaxModelling.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="57cbed5c-5f80-4f54-8832-56a2ef688d41"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="f49247a2-95a3-4bdc-844b-dd17c3a76f9b"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="9520527c-2ef8-492b-b3da-19d8b0fbf1cb"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="af876171-a39a-4267-8c6f-d5fc5bed209c"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="f05fb1a6-9daa-4ad5-92d8-47a0b1cf2437"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="5fb4f10e-fec1-4ea5-bb8d-d424760b28f4"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="65a72779-b5f3-4218-aff9-7d966db40331"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="c1508cf8-0adc-444d-af57-8176e8781d16"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
